@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WAGASCI Monitoring System</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="wagasci_monitor.css" rel="stylesheet">
+  <script src="header.js"></script>
+</head>
+<body>
+<h1>WAGASCI Monitoring System</h1>
+<div class="tabs">
+
+  <ul id="tab-links" class="tab-links">
+    <li id="ps_tab" class="active"><a href="#lambdaPS"     >Lambda PS         </a></li>
+    <li id="ws_tab"><a href="#waterSensor"  >Water Level Sensor</a></li>
+    <li id="ts_tab"><a href="#tempSensor"   >Temparature Sensor</a></li>
+    <li id="rs_tab"><a href="#runStatus"    >Run Status        </a></li>
+    <li id="dq_tab"><a href="#dataQuality"  >Data quality      </a></li>
+    <li id="lo_tab"><a href="#logs"         >Logs              </a></li>
+    <li id="dl_tab"><a href="#download"     >Download          </a></li>
+    <li id="el_tab"><a href="./elog.html"   >E-Log             </a></li>
+  </ul>
+
+  <div id="tab-content" class="tab-content">
+    <div id="lambdaPS" class="tab">
+      <form name="form_ps">
+      <p><img src="log/lambda_history1.png" width=50% name="imgsmp_ps"></img></p>
+      <p style="position: relative; top:0%; left:10%;"><select name="period_ps" size="1" onchange="imgChange_ps(this)">
+        <option value="0">10 min
+        <option value="1">1 hour
+        <option value="2">1 day
+        <option value="3">3 days
+      </select></p>
+      </form>
+    </div>
+    <div id="waterSensor" class="tab">
+      <form name="form_ws">
+      <p><img src="log/waterlevel_history1.png" width=50% name="imgsmp_ws"></img></p>
+      <p style="position: relative; top:0%; left:10%;"><select name="period_ws" size="1" onchange="imgChange_ws(this)">
+        <option value="0">10 min
+        <option value="1">1 hour
+        <option value="2">1 day
+        <option value="3">3 days
+      </select></p>
+      </form>
+    </div>
+    <div id="tempSensor" class="tab">
+      <form name="form_ts">
+      <p><img src="log/temperature_history1.png" width=50% name="imgsmp_ts"></img></p>
+      <p style="position: relative; top:0%; left:10%;"><select name="period_ts" size="1" onchange="imgChange_ts(this)">
+        <option value="0">10 min
+        <option value="1">1 hour
+        <option value="2">1 day
+        <option value="3">3 days
+      </select></p>
+      </form>
+    </div>
+    <div id="runStatus" class="tab">
+      <p><font size="+3"><B>Data quality
+      <script type="text/javascript" src="log/runid.js"></script>
+      </B></font></p>
+      <p><img src="log/run_status.png" width=50%></img></p>
+    </div>
+    <div id="dataQuality" class="tab">
+    <p><font size="+3"><B>Data quality
+    <script type="text/javascript" src="log/dq_history_time.js"></script>
+    </B></font></p>
+    <p><img src="log/pot_history.png" width=50%></img></p>
+    <p><img src="log/hit_bcid.png" width=50%></img></p>
+    <p><img src="log/History_Gain.png" width=50%></img></p>
+    <p><img src="log/History_hititme_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_pe_mm_mean.png" width=50%></img></p>
+    <font size="+3"><p>----------- Detail plots below --------------- </p></font>
+    <p><img src="log/pot_history_fhc.png" width=50%></img></p>
+    <p><img src="log/pot_history_rhc.png" width=50%></img></p>
+    <p><img src="log/History_bcid_chip_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_bcid_chip_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_bcid_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_bcid_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_diffGain2.png" width=50%></img></p>
+    <p><img src="log/History_diffGain.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_chip_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_chip_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_diff_chip_offbeam2.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_diff_chip_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_diff_chip_onbeam2.png" width=50%></img></p>
+    <p><img src="log/History_diff_hittime_diff_chip_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_diffNoise2.png" width=50%></img></p>
+    <p><img src="log/History_diffPedestal2.png" width=50%></img></p>
+    <p><img src="log/History_diffPedestal.png" width=50%></img></p>
+    <p><img src="log/History_gain_map.png" width=50%></img></p>
+    <p><img src="log/History_hittime_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_hittime_chip_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_hittime_chip_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_hit_timing.png" width=50%></img></p>
+    <p><img src="log/History_nhit_map.png" width=50%></img></p>
+    <p><img src="log/History_Noise.png" width=50%></img></p>
+    <p><img src="log/History_pe_chip_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_pe_chip_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_pe_map.png" width=50%></img></p>
+    <p><img src="log/History_pemm_view0_grid0.png" width=50%></img></p>
+    <p><img src="log/History_pemm_view0_grid1.png" width=50%></img></p>
+    <p><img src="log/History_pemm_view1_grid0.png" width=50%></img></p>
+    <p><img src="log/History_pemm_view1_grid1.png" width=50%></img></p>
+    <p><img src="log/History_pe_offbeam.png" width=50%></img></p>
+    <p><img src="log/History_pe_onbeam.png" width=50%></img></p>
+    <p><img src="log/History_pe_view0_grid0.png" width=50%></img></p>
+    <p><img src="log/History_pe_view0_grid1.png" width=50%></img></p>
+    <p><img src="log/History_pe_view1_grid0.png" width=50%></img></p>
+    <p><img src="log/History_pe_view1_grid1.png" width=50%></img></p>
+    <p><img src="log/History_spillnb.png" width=50%></img></p>
+    <!--<p><img src="log/hit_timing.png" width=50%></img></p>-->
+    </div>
+    <div id="download" class="download">
+      <p><a href="log/log_figure.tgz"><input type="button" value="Slow monitor"></a></p>
+      <p><a href="log/dq_figure.tgz"><input type="button" value="Data quality"></a></p>
+    </div>
+    <div id="logs" class="logs">
+      <p style="position: relative; top:10px; left:10px;">Select a log</p>
+      <ul id="log-tabs" class="log-tabs">
+        <li id="log_tab1"><input type="button" name="slowmonitor_log" value="SlowMonitor" onClick="showLog(1)"></li>
+      </ul>
+      <div><textarea id="log_disp" rows="50" cols="50" readonly></textarea></div>
+    </div>
+  </div>
+
+</div>
+<script src="wagasci_monitor.js"></script>
+</body>
+</html>
+

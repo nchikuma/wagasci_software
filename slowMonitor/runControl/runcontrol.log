@@ -1,0 +1,24 @@
+ 0x1: OK
+ 0x1: OK
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+ 0x1: OK
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 000
+[41m**  FAIL TO RECONFIGURE !  **[0m
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+[41m**  FAIL TO RECONFIGURE !  **[0m
+[41m**  FAIL TO RECONFIGURE 10 times !  **[0m
+*** Error!! ***
+mv.py: moving from prefix=/tmp/script_of_run to dest prefix=/home/data/prototech/wagasci/run_00129/script_of_run
+mv.py: moving /tmp/script_of_run.py to /home/data/prototech/wagasci/run_00129/script_of_run.py ...
+running wagasci_run_run("20", "600", "internal", "")...
+rc_script: retcode=0   res=fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001
+fail : fail : fail : fail : error while executing config_gdcc <- gdcc: gdcc_1_1: cant reset links: link 4 is not locked: 001

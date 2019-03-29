@@ -1,0 +1,95 @@
+body {
+  background: #555;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+/*********/
+/* TITLE */
+/*********/
+h1 {
+  color: white;
+  font-weight: 500;
+}
+
+/******/
+/*TABS*/
+/******/
+
+.tabs {
+  width:100%;
+  display:inline-block;
+}
+
+.tab-content {
+  background: white;
+  box-shadow:-3px 3px 3px rgba(0,0,0,0.15);
+}
+
+.tabs ul.tab-links{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+.tabs ul.tab-links li{
+  display:inline;
+  background:#666;
+  margin:0px;
+  padding:2px;
+}
+.tabs .tab-links li a{
+  padding:3px;
+}
+.tabs .tab-links li a:link,
+.tabs .tab-links li a:visited{
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background-color:#e0ffff;
+  color:#000;
+  font-weight: 600;
+  font-size:16px;
+  outline:0;
+  text-decoration:none;
+}
+.tabs .tab-links li a.active:link,
+.tabs .tab-links li a.active:visited{
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background-color:#191970;
+  color:#fff;
+  font-weight: 600;
+  font-size:16px;
+  outline:0;
+  text-decoration:none;
+}
+.tabs .tab-links li a:hover{
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background-color:#00bfff;
+  color:#000;
+  font-weight: 600;
+  font-size:16px;
+  outline:0;
+  text-decoration:none;
+}
+//.tab-content{
+//  position:relative;
+//  height:200px;
+//}
+//.tab-content div.tab{
+//  width:450px;
+//  height:200px;
+//  position:absolute;
+//  color:#222;
+//}
+.tab-content div.logs ul.log-tabs li{
+  display:inline;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
